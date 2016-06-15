@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PrdWolframTestingSuite" parallel="tests">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Sample Test">
+    <classes>
+      <class name="testing.loginTest"/>
+      <class name="testing.newNotebookTest"/>
+      <class name="testing.notebookValidationTest"/>
+      <class name="testing.launchTest"/>
+    </classes>
+  </test> <!-- Sample Test -->
+</suite> <!-- PrdWolframTestingSuite -->
